@@ -1,3 +1,5 @@
+image:https://travis-ci.org/DendiProject/documentation.svg?branch=master["Build Status", link="https://travis-ci.org/DendiProject/documentation"]
+
 :link-github-project-ghpages: https://dendiproject.github.io/documentation
 :link-demo-html: {link-github-project-ghpages}/document.html
 :link-demo-pdf: {link-github-project-ghpages}/document.pdf
