@@ -2,6 +2,6 @@
 :link-demo-html: {link-github-project-ghpages}/document.html
 :link-demo-pdf: {link-github-project-ghpages}/document.pdf
 
-
+** {link-github-project-ghpages}[Link to Github Pages]
 ** {link-demo-html}[HTML output file]
 ** {link-demo-pdf}[PDF output file]
