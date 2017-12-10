@@ -1,13 +1,15 @@
 image:https://travis-ci.org/DendiProject/documentation.svg?branch=master["Build Status", link="https://travis-ci.org/DendiProject/documentation"]
 
 :link-github-project-ghpages: https://dendiproject.github.io/documentation
+:link-github-project-IPS: https://dendiproject.github.io/identity-provider-service
 :link-doc-html: {link-github-project-ghpages}/document.html
 :link-doc-pdf: {link-github-project-ghpages}/document.pdf
 
 :link-design-html: {link-github-project-ghpages}/design.html
 :link-design-pdf: {link-github-project-ghpages}/design.pdf
 
-** {link-github-project-ghpages}[Link to Github Pages]
+** {link-github-project-ghpages}[*Link to Github Pages*]
+** {link-github-project-IPS}[IPS doc]
 ** {link-design-html}[design HTML file]
 ** {link-design-pdf}[design PDF file]
 ** {link-doc-html}[doc HTML file]
