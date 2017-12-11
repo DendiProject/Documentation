@@ -27,3 +27,6 @@ after_success:
 
 notifications:
  slack: uncvstu:rIa9LJi4cA5UIQUQDRm4slAz
+ template:
+  - "%{repository} (%{commit}) : %{message} %{foo} "
+  - "Build details: %{build_url}"
