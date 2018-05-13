@@ -1,0 +1,39 @@
+﻿@startuml
+
+title Components - Component Diagram
+
+skinparam defaultFontName Arial
+
+node "Identity Provider Service" #FABE58  {
+[Security-Manager]
+[User-Manager]
+database Users
+}
+node "Content Manager" #E5424D{
+[Content-Manager]
+database Resources
+}
+node "UI Service" #a5b1e5{
+  [Client UI]
+  [Server UI]
+  [Zuul]
+}
+node "Graph Manager" #61D89F{
+[Graph-Manager]
+database Receipes
+}
+[Security-Manager]--[Server UI]
+[Security-Manager]--[User-Manager]
+[Client UI]--[Zuul]
+[Security-Manager]--[Content-Manager]
+[Zuul]--[Content-Manager]
+[Content-Manager]--Resources
+[Graph-Manager]--[Security-Manager]
+[Server UI]--[Graph-Manager]
+[Client UI]--[Server UI]
+[Graph-Manager]--Receipes
+[User-Manager]--Users
+[Server UI]--[User-Manager]
+
+
+@enduml

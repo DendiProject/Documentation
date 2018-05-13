@@ -1,0 +1,21 @@
+﻿
+:Пользователь: as user
+:Гость: as guest
+usecase receipe as "Создание/редактирование рецета" #FABE58
+usecase top as "Формирование своего топа рецептов" #F6A9BB
+usecase register as "Регистрация/Авторизация" 	#FABE58
+usecase light as "Просмотр топа рецептов" #F6A9BB
+usecase full as "Приготовление рецепта компанией" #F6A9BB
+usecase cooking as "Пошаговое приготовление блюда" #FABE58
+usecase profile as "Работа с профилем" 	#FABE58
+
+guest --> register
+guest-->light
+user-->guest
+user-->receipe
+user-->full 
+user-->cooking
+user-->profile
+user-->top
+
+@enduml

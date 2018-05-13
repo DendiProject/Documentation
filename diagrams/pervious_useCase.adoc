@@ -1,0 +1,41 @@
+﻿@startuml
+
+skinparam defaultFontName Arial
+
+
+:Пользователь: as user
+:Гость: as guest
+:Администратор: as admin
+
+
+usecase register #FABE58 as "Регистрация/
+Авторизация" 	
+usecase light  #F6A9BB as  "Просмотр рецептов 
+каталога light" 
+
+usecase full  #F6A9BB as "Просмотр рецептов 
+каталога full" 
+usecase receipe #FABE58 as "Создание/редактирование 
+рецета" 
+usecase cooking #FABE58 as "Пошаговое 
+приготовление блюда" 
+usecase social  #a5b1e5 as "Социальное 
+взаимодействие" 	
+usecase profile as "Работа с профилем" 	#FABE58
+usecase list as "Список покупок" #a5b1e5
+usecase bloking #a5b1e5 as "Блокировка 
+пользователей"
+usecase moderation as "Модерирование" #a5b1e5
+guest --> register
+guest-->light
+user-->guest
+user-->receipe
+user-->full 
+user-->cooking
+user-->social
+user-->profile
+user-->list
+admin-->bloking
+admin-->moderation
+
+@enduml

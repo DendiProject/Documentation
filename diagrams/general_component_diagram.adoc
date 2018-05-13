@@ -1,0 +1,17 @@
+﻿@startuml
+
+title Components - Component Diagram
+
+skinparam defaultFontName Arial
+
+node "Identity Provider Service" as IDP #FABE58 
+node "Content Manager" as CM #E5424D
+node "UI Service" as UI #a5b1e5
+node "Graph Manager" as GM #61D89F
+IDP--UI
+IDP--CM
+IDP--GM
+UI--CM
+UI--GM
+
+@enduml
